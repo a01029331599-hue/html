@@ -1,8 +1,513 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
 <head>
-Hi!!
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)비에이텍 - 흐름의 기술, 물의 가치를 더하는 기업</title>
+    <meta name="description" content="(주)비에이텍은 워터 펌프 제조, 설치, 유지보수 전문 기업입니다. 부스터펌프, 수중펌프, 슬러지펌프 등 다양한 산업용 펌프 솔루션을 제공합니다.">
+    <meta name="keywords" content="비에이텍, 워터펌프, 부스터펌프, 수중펌프, 슬러지펌프, 모노펌프, 정량펌프, 편흡입볼류트펌프, 펌프유지보수">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Pretendard', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0056b3', /* Deep Blue */
+                        secondary: '#00a8e8', /* Light Blue */
+                        dark: '#1a202c',
+                        light: '#f7fafc',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-bye
+<body class="font-sans text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Header / GNB -->
+    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary tracking-tighter">
+                        <i class="fa-solid fa-water mr-2"></i>(주)비에이텍
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-semibold transition-colors">홈</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-semibold transition-colors">회사소개</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary font-semibold transition-colors">주요제품 및 시설</a>
+                    <a href="#pr" class="text-gray-700 hover:text-primary font-semibold transition-colors">홍보자료실</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-semibold transition-colors">고객지원</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">홈</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">회사소개</a>
+                <a href="#products" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">주요제품 및 시설</a>
+                <a href="#pr" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">홍보자료실</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">고객지원</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-20 h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Video/Image Placeholder -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1541256996860-1e5828469cb9?auto=format&fit=crop&q=80" alt="Water Background" class="w-full h-full object-cover object-center filter brightness-50">
+        </div>
+        
+        <div class="relative z-10 text-center px-4 fade-up">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                흐름의 기술, <span class="text-secondary">물의 가치</span>를 더하는 <br/>
+                <span class="text-5xl md:text-7xl">(주)비에이텍</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light">
+                최고의 품질과 기술력으로 워터 펌프 제조, 설치, 유지보수의 새로운 표준을 제시합니다.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#about" class="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-primary/50 transform hover:-translate-y-1">
+                    회사소개 보기
+                </a>
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-full font-bold transition-all shadow-lg transform hover:-translate-y-1">
+                    문의하기
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white text-3xl opacity-70 hover:opacity-100">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">회사소개</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="fade-up">
+                    <h3 class="text-2xl font-bold text-primary mb-4">"끊임없는 혁신으로 최고의 가치를 창출합니다."</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        (주)비에이텍은 다년간 축적된 엔지니어링 노하우를 바탕으로 산업용 워터 펌프의 제조, 설치, 유지보수에 이르기까지 토탈 솔루션을 제공합니다.<br><br>
+                        체계적인 조직도 및 업무분장을 통해 고객의 요구에 신속하게 대응하며, ISO9001, KC인증, 메인비즈 확인서 등 다수의 인증을 획득하여 품질경영을 실천하고 있습니다.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-award text-4xl text-secondary mb-2"></i>
+                            <p class="font-bold text-sm">ISO9001 인증</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa-solid fa-shield-halved text-4xl text-secondary mb-2"></i>
+                            <p class="font-bold text-sm">KC 인증</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa-solid fa-building-circle-check text-4xl text-secondary mb-2"></i>
+                            <p class="font-bold text-sm">메인비즈 획득</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative fade-up">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Company Office" class="rounded-lg shadow-xl w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-lg shadow-lg">
+                        <p class="text-3xl font-bold">10+ Years</p>
+                        <p class="text-sm">Of Excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="mt-20 fade-up">
+                <h3 class="text-2xl font-bold text-center text-dark mb-10">연혁</h3>
+                <div class="relative border-l-4 border-gray-200 ml-3 md:ml-1/2 left-1/2 transform -translate-x-1/2 w-full max-w-3xl">
+                    
+                    <div class="mb-10 relative">
+                        <div class="absolute -left-3.5 mt-1.5 w-6 h-6 rounded-full bg-primary border-4 border-white shadow"></div>
+                        <div class="pl-8 md:pl-0 md:w-1/2 md:pr-10 md:text-right">
+                            <h4 class="text-xl font-bold text-primary">현재</h4>
+                            <p class="text-gray-600 font-semibold mb-1">메인비즈 인증 및 지명원 갱신</p>
+                            <p class="text-sm text-gray-500">최신 설비 도입 및 사업 영역 전국 확대</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-10 relative flex md:justify-end">
+                        <div class="absolute -left-3.5 md:left-auto md:-right-3.5 mt-1.5 w-6 h-6 rounded-full bg-secondary border-4 border-white shadow z-10 md:left-[calc(50%-12px)]"></div>
+                        <div class="pl-8 md:pl-10 md:w-1/2">
+                            <h4 class="text-xl font-bold text-primary">2020</h4>
+                            <p class="text-gray-600 font-semibold mb-1">ISO9001 / KC 인증 획득</p>
+                            <p class="text-sm text-gray-500">품질 경영 시스템 도입 및 제품 안정성 확보</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-10 relative">
+                        <div class="absolute -left-3.5 mt-1.5 w-6 h-6 rounded-full bg-secondary border-4 border-white shadow"></div>
+                        <div class="pl-8 md:pl-0 md:w-1/2 md:pr-10 md:text-right">
+                            <h4 class="text-xl font-bold text-primary">2015</h4>
+                            <p class="text-gray-600 font-semibold mb-1">(주)비에이텍 법인 설립</p>
+                            <p class="text-sm text-gray-500">수중펌프 및 부스터펌프 연구개발 시작</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Facilities Section -->
+    <section id="products" class="py-24 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">주요 제품 및 시설</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-600">다양한 산업 현장에 최적화된 고효율 펌프 솔루션을 제공합니다.</p>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl fade-up">
+                    <img src="https://via.placeholder.com/600x400/0056b3/ffffff?text=Booster+Pump" alt="부스터펌프" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">부스터펌프</h3>
+                        <p class="text-sm text-gray-600 mb-4">고층 빌딩 및 대규모 시설의 안정적인 급수를 위한 최적의 시스템.</p>
+                        <table class="w-full text-sm text-left text-gray-500 border-t border-gray-100">
+                            <tbody>
+                                <tr><td class="py-2 font-semibold text-gray-700">특징</td><td class="py-2 text-right">인버터 제어, 에너지 절감</td></tr>
+                                <tr><td class="py-2 font-semibold text-gray-700">자료</td><td class="py-2 text-right"><a href="#" class="text-primary hover:underline">유지관리지침서 <i class="fa-solid fa-download"></i></a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl fade-up" style="transition-delay: 100ms;">
+                    <img src="https://via.placeholder.com/600x400/00a8e8/ffffff?text=Submersible+Pump" alt="수중펌프" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">수중펌프</h3>
+                        <p class="text-sm text-gray-600 mb-4">뛰어난 내구성과 방수 설계로 지하수 및 폐수 처리에 탁월합니다.</p>
+                        <table class="w-full text-sm text-left text-gray-500 border-t border-gray-100">
+                            <tbody>
+                                <tr><td class="py-2 font-semibold text-gray-700">특징</td><td class="py-2 text-right">고효율 모터, 완벽 방수</td></tr>
+                                <tr><td class="py-2 font-semibold text-gray-700">자료</td><td class="py-2 text-right"><a href="#" class="text-primary hover:underline">유지관리지침서 <i class="fa-solid fa-download"></i></a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl fade-up" style="transition-delay: 200ms;">
+                    <img src="https://via.placeholder.com/600x400/0056b3/ffffff?text=Sludge+Pump" alt="슬러지펌프" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">슬러지펌프</h3>
+                        <p class="text-sm text-gray-600 mb-4">고점도 및 이물질이 포함된 유체를 이송하는데 특화된 강력한 펌프.</p>
+                        <table class="w-full text-sm text-left text-gray-500 border-t border-gray-100">
+                            <tbody>
+                                <tr><td class="py-2 font-semibold text-gray-700">특징</td><td class="py-2 text-right">내마모성 재질, 막힘 방지</td></tr>
+                                <tr><td class="py-2 font-semibold text-gray-700">자료</td><td class="py-2 text-right"><a href="#" class="text-primary hover:underline">유지관리지침서 <i class="fa-solid fa-download"></i></a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl fade-up">
+                    <img src="https://via.placeholder.com/600x400/00a8e8/ffffff?text=Mono+Pump" alt="일축나사식 모노펌프" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">일축나사식 모노펌프</h3>
+                        <p class="text-sm text-gray-600 mb-4">정밀한 이송이 필요한 환경에서 맥동 없는 부드러운 흐름을 제공합니다.</p>
+                        <table class="w-full text-sm text-left text-gray-500 border-t border-gray-100">
+                            <tbody>
+                                <tr><td class="py-2 font-semibold text-gray-700">특징</td><td class="py-2 text-right">정량 이송, 무맥동</td></tr>
+                                <tr><td class="py-2 font-semibold text-gray-700">자료</td><td class="py-2 text-right"><a href="#" class="text-primary hover:underline">유지관리지침서 <i class="fa-solid fa-download"></i></a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl fade-up" style="transition-delay: 100ms;">
+                    <img src="https://via.placeholder.com/600x400/0056b3/ffffff?text=Metering+Pump" alt="정량펌프" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">정량펌프</h3>
+                        <p class="text-sm text-gray-600 mb-4">화학 약품 및 정밀한 혼합이 필요한 공정에 정확한 유량을 주입합니다.</p>
+                        <table class="w-full text-sm text-left text-gray-500 border-t border-gray-100">
+                            <tbody>
+                                <tr><td class="py-2 font-semibold text-gray-700">특징</td><td class="py-2 text-right">초정밀 제어, 내화학성</td></tr>
+                                <tr><td class="py-2 font-semibold text-gray-700">자료</td><td class="py-2 text-right"><a href="#" class="text-primary hover:underline">유지관리지침서 <i class="fa-solid fa-download"></i></a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl fade-up" style="transition-delay: 200ms;">
+                    <img src="https://via.placeholder.com/600x400/00a8e8/ffffff?text=Volute+Pump" alt="편흡입볼류트펌프" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">편흡입볼류트펌프</h3>
+                        <p class="text-sm text-gray-600 mb-4">산업용수, 냉각수 순환 등 광범위하게 사용되는 다목적 표준 펌프.</p>
+                        <table class="w-full text-sm text-left text-gray-500 border-t border-gray-100">
+                            <tbody>
+                                <tr><td class="py-2 font-semibold text-gray-700">특징</td><td class="py-2 text-right">구조 간결, 범용성</td></tr>
+                                <tr><td class="py-2 font-semibold text-gray-700">자료</td><td class="py-2 text-right"><a href="#" class="text-primary hover:underline">유지관리지침서 <i class="fa-solid fa-download"></i></a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facilities Gallery -->
+            <div class="mt-16 fade-up">
+                <h3 class="text-2xl font-bold text-dark mb-8 text-center"><i class="fa-solid fa-industry text-primary mr-2"></i>비에이텍(주) 공장 시설</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="https://images.unsplash.com/photo-1580983546059-4d6d6da82029?auto=format&fit=crop&q=80&w=400" alt="공장전경" class="rounded-lg shadow hover:opacity-80 transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1565515261011-854728560124?auto=format&fit=crop&q=80&w=400" alt="생산라인" class="rounded-lg shadow hover:opacity-80 transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1621610444342-9f3b1451fdb3?auto=format&fit=crop&q=80&w=400" alt="테스트실" class="rounded-lg shadow hover:opacity-80 transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400" alt="출하대기" class="rounded-lg shadow hover:opacity-80 transition cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PR Library Section -->
+    <section id="pr" class="py-24 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">홍보자료실</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Video Embed -->
+                <div class="fade-up">
+                    <h3 class="text-xl font-bold mb-6 flex items-center"><i class="fa-brands fa-youtube text-red-500 mr-2 text-2xl"></i> 비에이텍 홍보 영상</h3>
+                    <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl bg-black flex items-center justify-center">
+                        <!-- Placeholder for YouTube iframe -->
+                        <div class="text-center p-10">
+                            <i class="fa-brands fa-youtube text-6xl text-gray-600 mb-4"></i>
+                            <p class="text-gray-400">유튜브 영상 임베드 영역<br>(광고 영상)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documents & Card News -->
+                <div class="fade-up">
+                    <h3 class="text-xl font-bold mb-6 flex items-center"><i class="fa-solid fa-file-pdf text-red-400 mr-2 text-2xl"></i> 지명원 및 자료실</h3>
+                    
+                    <div class="bg-white text-dark rounded-xl p-8 shadow-xl mb-8 flex justify-between items-center transform transition hover:scale-105">
+                        <div>
+                            <h4 class="font-bold text-lg">(주)비에이텍 지명원</h4>
+                            <p class="text-sm text-gray-500">기업 상세 정보 및 실적 증명 자료</p>
+                        </div>
+                        <a href="#" class="bg-primary hover:bg-blue-800 text-white p-4 rounded-full transition-colors">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+
+                    <!-- Card News Slider (CSS Snap) -->
+                    <h4 class="font-bold mb-4">최신 소식 (카드뉴스)</h4>
+                    <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 scrollbar-hide">
+                        <div class="snap-center shrink-0 w-64 bg-white text-dark rounded-lg overflow-hidden shadow">
+                            <img src="https://via.placeholder.com/300x200/0056b3/ffffff?text=News+1" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <p class="text-xs text-gray-500 mb-1">2026.05.01</p>
+                                <p class="font-bold text-sm">신제품 출시 안내 및 전시회 참가</p>
+                            </div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 bg-white text-dark rounded-lg overflow-hidden shadow">
+                            <img src="https://via.placeholder.com/300x200/00a8e8/ffffff?text=News+2" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <p class="text-xs text-gray-500 mb-1">2026.04.15</p>
+                                <p class="font-bold text-sm">유지보수 서비스 지역 전국 확대</p>
+                            </div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 bg-white text-dark rounded-lg overflow-hidden shadow">
+                            <img src="https://via.placeholder.com/300x200/0056b3/ffffff?text=News+3" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <p class="text-xs text-gray-500 mb-1">2026.03.10</p>
+                                <p class="font-bold text-sm">ISO9001 품질경영 갱신 완료</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">고객지원 및 오시는 길</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info & Form -->
+                <div class="fade-up">
+                    <div class="mb-10">
+                        <h3 class="text-2xl font-bold text-primary mb-6">문의하기</h3>
+                        <p class="text-gray-600 mb-8">제품 설치, 견적, 유지보수 등 궁금하신 사항을 남겨주시면 신속하게 답변해 드리겠습니다.</p>
+                        
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">이름/회사명</label>
+                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="홍길동 / (주)회사명">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">연락처</label>
+                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="010-0000-0000">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">이메일</label>
+                                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="example@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">문의 내용</label>
+                                <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="문의하실 내용을 상세히 적어주세요."></textarea>
+                            </div>
+                            <button type="button" class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors">
+                                문의 접수하기
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="bg-light p-6 rounded-lg shadow-inner">
+                        <div class="flex items-start mb-4">
+                            <i class="fa-solid fa-location-dot text-primary text-xl mt-1 mr-4 w-6 text-center"></i>
+                            <div>
+                                <p class="font-bold text-dark">주소</p>
+                                <p class="text-gray-600 text-sm">대한민국 어딘가 비에이텍 산업단지 123-45</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="fa-solid fa-phone text-primary text-xl mt-1 mr-4 w-6 text-center"></i>
+                            <div>
+                                <p class="font-bold text-dark">대표전화</p>
+                                <p class="text-gray-600 text-sm">02-1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-envelope text-primary text-xl mt-1 mr-4 w-6 text-center"></i>
+                            <div>
+                                <p class="font-bold text-dark">이메일</p>
+                                <p class="text-gray-600 text-sm">info@batech.co.kr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kakao Map -->
+                <div class="fade-up h-full min-h-[400px] flex flex-col">
+                    <h3 class="text-2xl font-bold text-primary mb-6">오시는 길</h3>
+                    <div id="map" class="w-full flex-grow rounded-xl shadow-lg border border-gray-200">
+                        <!-- Map will be injected here -->
+                    </div>
+                    <div class="mt-4 flex justify-end">
+                        <a href="https://map.kakao.com/link/to/비에이텍,37.566826,126.9786567" target="_blank" class="flex items-center text-primary font-bold hover:text-blue-800 transition">
+                            <i class="fa-solid fa-map-location-dot mr-2"></i> 카카오맵 길찾기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <a href="#" class="text-2xl font-bold text-white tracking-tighter mb-2 block">
+                    <i class="fa-solid fa-water mr-2"></i>(주)비에이텍
+                </a>
+                <p class="text-sm">워터펌프의 새로운 표준, 비에이텍이 만들어갑니다.</p>
+            </div>
+            <div class="text-sm text-center md:text-right">
+                <p>상호: (주)비에이텍 | 대표: 홍길동 | 사업자등록번호: 123-45-67890</p>
+                <p class="mt-2">&copy; 2026 BA Tech Co., Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- Kakao Map API (Replace YOUR_APP_KEY with actual key) -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_APP_KEY"></script>
+    <script>
+        // Kakao Map Initialization
+        window.onload = function() {
+            try {
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = { 
+                        center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표 (임시: 서울시청)
+                        level: 3 // 지도의 확대 레벨
+                    };
+
+                var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+                // 마커가 표시될 위치입니다 
+                var markerPosition  = new kakao.maps.LatLng(37.566826, 126.9786567); 
+
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+                
+                var iwContent = '<div style="padding:5px; color:black; font-weight:bold; font-size:12px;">(주)비에이텍</div>', // 인포윈도우에 표출될 내용
+                    iwPosition = new kakao.maps.LatLng(37.566826, 126.9786567); //인포윈도우 표시 위치
+
+                // 인포윈도우를 생성합니다
+                var infowindow = new kakao.maps.InfoWindow({
+                    position : iwPosition, 
+                    content : iwContent 
+                });
+                
+                // 마커 위에 인포윈도우를 표시합니다
+                infowindow.open(map, marker);
+            } catch (e) {
+                console.log("Kakao Map API Key가 유효하지 않거나 로드되지 않았습니다.");
+                document.getElementById('map').innerHTML = '<div class="w-full h-full flex flex-col items-center justify-center bg-gray-100 text-gray-500 rounded-xl"><i class="fa-solid fa-map mb-2 text-4xl"></i><p>카카오 지도 API 키(YOUR_APP_KEY)를 입력해주세요.</p></div>';
+            }
+        };
+    </script>
 </body>
 </html>
