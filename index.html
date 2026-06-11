@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>(주)비에이텍 - 수자원 관리 및 펌프 시스템의 표준</title>
-  <meta name="description" content="워터펌프 제작, 설치, 수리 전문 강소기업 (주)비에이텍의 공식 웹사이트입니다. 부스터 펌프, 수중 펌프, 슬러지 펌프, 일축나사식 모노 펌프, 정량 펌프 제품 정보 및 디지털 브로슈어를 확인하세요.">
   <meta name="description" content="워터펌프 제작, 설치, 수리 전문 강소기업 (주)비에이텍의 공식 웹사이트입니다. 부스터 펌프, 수중 펌프, 슬러지 펌프, 일축나사식 모노 펌프, 편흡입 볼류트 펌프 정보 및 AI 유지관리 챗봇을 제공합니다.">
   
   <!-- Font Styles -->
@@ -65,9 +64,6 @@
     .animate-wave-slow {
       animation: wave-flow 15s linear infinite;
     }
-    .animate-wave-fast {
-      animation: wave-flow 8s linear infinite;
-    }
     
     /* E-Brochure Page Flip/Slide effect */
     .brochure-container {
@@ -127,13 +123,6 @@
           </div>
         </a>
         <!-- Desktop Navigation Menu -->
-        <nav class="hidden md:flex space-x-1 lg:space-x-2">
-          <button onclick="MapsTo('home')" id="nav-home" class="px-4 py-2 rounded-lg text-sm font-semibold hover:text-brand-light hover:bg-white/5 transition-all duration-200">홈</button>
-          <button onclick="MapsTo('intro')" id="nav-intro" class="px-4 py-2 rounded-lg text-sm font-semibold hover:text-brand-light hover:bg-white/5 transition-all duration-200">기업소개</button>
-          <button onclick="MapsTo('product')" id="nav-product" class="px-4 py-2 rounded-lg text-sm font-semibold hover:text-brand-light hover:bg-white/5 transition-all duration-200">주요제품</button>
-          <button onclick="MapsTo('equipment')" id="nav-equipment" class="px-4 py-2 rounded-lg text-sm font-semibold hover:text-brand-light hover:bg-white/5 transition-all duration-200">시설·장비</button>
-          <button onclick="MapsTo('sales_history')" id="nav-sales_history" class="px-4 py-2 rounded-lg text-sm font-semibold hover:text-brand-light hover:bg-white/5 transition-all duration-200">업력·인증</button>
-          <button onclick="MapsTo('map')" id="nav-map" class="px-4 py-2 rounded-lg text-sm font-semibold hover:text-brand-light hover:bg-white/5 transition-all duration-200">찾아오시는 길</button>
         <nav class="hidden lg:flex space-x-1">
           <button onclick="MapsTo('home')" id="nav-home" class="px-3 py-2 rounded-lg text-sm font-semibold hover:text-brand-light hover:bg-white/5 transition-all duration-200">홈</button>
           <button onclick="MapsTo('intro')" id="nav-intro" class="px-3 py-2 rounded-lg text-sm font-semibold hover:text-brand-light hover:bg-white/5 transition-all duration-200">기업소개</button>
@@ -156,7 +145,6 @@
             <span>견적/수리 문의</span>
           </button>
           <!-- Mobile Menu Button -->
-          <button onclick="toggleMobileMenu(true)" class="md:hidden p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none">
           <button onclick="toggleMobileMenu(true)" class="lg:hidden p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none">
             <i data-lucide="menu" class="h-6 w-6"></i>
           </button>
@@ -184,7 +172,6 @@
         <button onclick="MapsTo('equipment')" id="mob-nav-equipment" class="flex items-center space-x-3 px-4 py-3 rounded-lg text-left font-semibold hover:bg-white/5 transition-all text-slate-100"><i data-lucide="wrench" class="h-4 w-4 text-brand-light"></i><span>시설·장비</span></button>
         <button onclick="MapsTo('sales_history')" id="mob-nav-sales_history" class="flex items-center space-x-3 px-4 py-3 rounded-lg text-left font-semibold hover:bg-white/5 transition-all text-slate-100"><i data-lucide="award" class="h-4 w-4 text-brand-light"></i><span>업력·인증</span></button>
         <button onclick="MapsTo('map')" id="mob-nav-map" class="flex items-center space-x-3 px-4 py-3 rounded-lg text-left font-semibold hover:bg-white/5 transition-all text-slate-100"><i data-lucide="map-pin" class="h-4 w-4 text-brand-light"></i><span>찾아오시는 길</span></button>
-        <button onclick="MapsTo('inquiry')" id="mob-nav-inquiry" class="flex items-center space-x-3 px-4 py-3 rounded-lg text-left font-semibold hover:bg-white/5 transition-all text-slate-100"><i data-lucide="mail" class="h-4 w-4 text-brand-light"></i><span>견적/수리 문의</span></button>
       </nav>
       <div class="pt-6 border-t border-sky-900/40">
         <a href="tel:0332649243" class="flex items-center justify-center space-x-2 w-full bg-gradient-to-r from-brand-sky to-brand-light text-white font-bold py-3 rounded-xl shadow-lg">
@@ -222,9 +209,6 @@
               <i data-lucide="book-open" class="h-5 w-5"></i>
               <span>온라인 E-브로슈어 보기</span>
             </button>
-            <button onclick="MapsTo('product')" class="bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-sm hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2">
-              <span>주요 펌프 라인업</span>
-              <i data-lucide="arrow-right" class="h-5 w-5 text-brand-light"></i>
             <button onclick="MapsTo('chatbot')" class="bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-sm hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2">
               <span>AI 유지관리 상담하기</span>
               <i data-lucide="message-square" class="h-5 w-5 text-brand-light animate-pulse"></i>
@@ -249,12 +233,10 @@
             <div class="text-xs text-brand-sky font-medium mt-1">KC인증, ISO9001, MAIN-BIZ</div>
           </div>
           <div class="p-6 text-center">
-            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">핵심 펌프 생산라인</div>
             <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">주요 생산 펌프</div>
             <div class="text-3xl font-heading font-extrabold text-brand-navy flex items-center justify-center space-x-1">
               <span id="counter-pump">0</span><span>종</span>
             </div>
-            <div class="text-xs text-brand-sky font-medium mt-1">부스터, 수중, 슬러지, 모노, 정량</div>
             <div class="text-xs text-brand-sky font-medium mt-1">부스터, 수중, 슬러지, 모노, 볼류트</div>
           </div>
           <div class="p-6 text-center">
@@ -316,14 +298,10 @@
             <div class="h-14 w-14 rounded-2xl bg-sky-50 flex items-center justify-center text-brand-sky mb-6">
               <i data-lucide="shield-check" class="h-7 w-7"></i>
             </div>
-            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">철저한 사후 품질보증(A/S)</h3>
             <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">AI 스마트 유지보수 비서</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-4">
-              독립된 품질보증부를 운영하며 설치 및 인도 완료 후에도 자체 유지관리 지침에 근거하여 이상 소음, 씰 마모 등 고장 발생 시 24시간 긴급 출동 체계를 보장합니다.
               공식 유지관리 지침 문서 5종을 완전 학습한 NotebookLM 기반 AI 유지관리 챗봇을 탑재하여 현장 고장 상황 발생 시 실시간으로 대책을 제시해 드립니다.
             </p>
-            <button onclick="MapsTo('product')" class="text-brand-sky text-xs font-bold hover:text-sky-600 flex items-center space-x-1">
-              <span>제품 유지관리지침 보기</span>
             <button onclick="MapsTo('chatbot')" class="text-brand-sky text-xs font-bold hover:text-sky-600 flex items-center space-x-1">
               <span>AI 유지관리 챗봇 이동</span>
               <i data-lucide="chevron-right" class="h-3 w-3"></i>
@@ -439,7 +417,6 @@
                           <div class="px-2 py-0.5 bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 font-bold text-[10px] rounded mt-0.5">ISO 9001</div>
                           <div>
                             <span class="font-bold text-white">ISO 9001:2015 품질경영인증</span> (ICR 국제인증원)
-                            <div class="text-[11px] text-slate-400 mt-0.5">범위: 부스터, 벌류트, 정량, 수중, 오수, 슬러지, 심정용 펌프 제조 / 유효기간: ~2027.08.22</div>
                             <div class="text-[11px] text-slate-400 mt-0.5">범위: 부스터, 벌류트, 수중, 슬러지, 심정용 펌프 제조 / 유효기간: ~2027.08.22</div>
                           </div>
                         </div>
@@ -473,13 +450,10 @@
                           <p class="text-slate-400 mt-1 leading-tight">찌꺼기 및 이물질을 연속 분쇄하여 파이프라인 막힘 없이 고효율 이송.</p>
                         </div>
                         <div class="bg-white/5 p-2.5 rounded-lg border border-white/5">
-                          <div class="font-bold text-white text-sm">4. 일축나사식 모노 펌프</div>
                           <div class="font-bold text-white text-sm">4. 일축나사식 펌프</div>
                           <p class="text-slate-400 mt-1 leading-tight">편심 스테이터-로터 편심 구동 공동을 통해 초고점도 유체를 연속 이송.</p>
                         </div>
                         <div class="bg-white/5 p-2.5 rounded-lg border border-white/5 sm:col-span-2">
-                          <div class="font-bold text-white text-sm">5. 등속도캠 정량 펌프</div>
-                          <p class="text-slate-400 mt-1 leading-tight">정밀 등속도캠 축 구조 설계를 적용, 토출 시 발생하는 고질적인 맥동 현상을 차단하고 화학약품 정량 주입.</p>
                           <div class="font-bold text-white text-sm">5. 편흡입 볼류트 펌프</div>
                           <p class="text-slate-400 mt-1 leading-tight">가장 널리 쓰이는 원심식 펌프로 공조, 공업 배수 등에 대유량 송수.</p>
                         </div>
@@ -563,7 +537,6 @@
       </div>
       <!-- CEO Greeting -->
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="bg-white rounded-3xl border border-slate-100 shadow-sm p-8 sm:p-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <div class="bg-white rounded-3xl border border-slate-200/60 shadow-sm p-8 sm:p-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div class="md:col-span-1 flex flex-col items-center text-center">
             <div class="w-32 h-32 rounded-2xl bg-gradient-to-tr from-brand-navy to-brand-sky flex items-center justify-center text-white mb-4 shadow-lg shadow-brand-navy/10">
@@ -678,47 +651,19 @@
         </div>
       </div>
     </section>
-    <!-- 3. PRODUCTS TAB -->
     <!-- 3. PRODUCTS TAB (concise simplified descriptions) -->
     <section id="section-product" class="page-section hidden">
       <!-- Title Hero -->
       <div class="bg-slate-100 border-b border-slate-200 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">주요 제품 및 유지관리 가이드</h2>
-          <p class="text-slate-500 text-sm max-w-xl mx-auto mt-2">비에이텍이 생산하는 5대 핵심 워터펌프의 사양, 작동 원리 및 예방 정비 매뉴얼을 확인하세요.</p>
           <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">비에이텍 5대 주력 제품</h2>
           <p class="text-slate-500 text-sm max-w-xl mx-auto mt-2">설계부터 완제품 시험까지 독자 기술력으로 생산하는 주요 워터펌프 모델입니다.</p>
         </div>
       </div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
         <!-- Grid layout for the 5 pumps -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
-          <!-- Left Sidebar Menu (Pump list) -->
-          <div class="lg:col-span-1 space-y-2">
-            <div class="bg-slate-100 p-2 rounded-2xl flex flex-col space-y-1">
-              <button onclick="switchPump(0)" id="pump-btn-0" class="w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all flex items-center space-x-2 text-brand-sky bg-white shadow-sm border border-slate-200/50">
-                <i data-lucide="chevrons-right" class="h-4 w-4"></i>
-                <span>부스터 펌프 시스템</span>
-              </button>
-              <button onclick="switchPump(1)" id="pump-btn-1" class="w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all flex items-center space-x-2 text-slate-600 hover:bg-white/50">
-                <i data-lucide="chevron-right" class="h-4 w-4 opacity-55"></i>
-                <span>심정용 수중 펌프</span>
-              </button>
-              <button onclick="switchPump(2)" id="pump-btn-2" class="w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all flex items-center space-x-2 text-slate-600 hover:bg-white/50">
-                <i data-lucide="chevron-right" class="h-4 w-4 opacity-55"></i>
-                <span>오수/배수 슬러지 펌프</span>
-              </button>
-              <button onclick="switchPump(3)" id="pump-btn-3" class="w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all flex items-center space-x-2 text-slate-600 hover:bg-white/50">
-                <i data-lucide="chevron-right" class="h-4 w-4 opacity-55"></i>
-                <span>일축나사식 모노 펌프</span>
-              </button>
-              <button onclick="switchPump(4)" id="pump-btn-4" class="w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all flex items-center space-x-2 text-slate-600 hover:bg-white/50">
-                <i data-lucide="chevron-right" class="h-4 w-4 opacity-55"></i>
-                <span>다이아프램 정량 펌프</span>
-              </button>
           <!-- Pump 1 -->
           <div class="bg-white rounded-3xl border border-slate-200/60 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
             <div>
@@ -731,11 +676,6 @@
                 배관 출구측의 압력 변동을 감지하여 펌프 모터 회전 주파수(VFD 인버터)를 정밀 조절하는 가압 장치입니다. 빌딩 및 아파트 공동 주택에 일정한 수압으로 급수를 안전하게 송수하며, 불필요한 공회전 및 과부하 기동을 방지하여 에너지 절감률을 극대화합니다.
               </p>
             </div>
-            
-            <div class="bg-brand-navy text-white rounded-2xl p-5 shadow-sm border border-sky-950">
-              <h5 class="text-xs text-brand-light uppercase tracking-wider font-bold mb-2">유지보수 긴급 접수</h5>
-              <p class="text-xs text-slate-300 leading-relaxed mb-4">
-                펌프 가동 시 심한 소음이 발생하거나 압력이 저하되는 경우, 즉시 품질보증팀으로 수리 접수를 해주십시오.
             <div class="border-t border-slate-100 pt-4 mt-6">
               <span class="text-[10px] text-brand-sky font-semibold bg-sky-50 px-2 py-0.5 rounded-full">주요범위: 지상용 수직 다단 가압 유닛</span>
             </div>
@@ -751,25 +691,11 @@
               <p class="text-slate-500 text-xs leading-relaxed font-light">
                 심정 우물, 집수조 하단 등 깊은 지하 수중에 완전히 잠겨 작동하는 고압 원심식 펌프입니다. 모터 구동축과 격실 내부에 특수 이중 기밀 Mechanical Seal 방수 구조를 설계하여 외부 수자원 압력에 의한 모터 코일 누전을 차단하고 영구적인 내구성을 가집니다.
               </p>
-              <button onclick="MapsTo('inquiry')" class="w-full bg-brand-sky hover:bg-sky-600 text-white font-bold py-2 rounded-xl text-xs transition-all flex items-center justify-center space-x-1">
-                <i data-lucide="mail" class="h-3.5 w-3.5"></i>
-                <span>온라인 수리 신청</span>
-              </button>
             </div>
             <div class="border-t border-slate-100 pt-4 mt-6">
               <span class="text-[10px] text-brand-sky font-semibold bg-sky-50 px-2 py-0.5 rounded-full">주요범위: 지하수 개발 및 하수 배수용</span>
             </div>
           </div>
-          <!-- Right Content Area (Details & Manuals) -->
-          <div class="lg:col-span-3 bg-white rounded-3xl border border-slate-200/60 p-6 sm:p-8 shadow-sm min-h-[400px]">
-            
-            <!-- Dynamic Pump Header -->
-            <div class="border-b border-slate-100 pb-6 mb-6">
-              <div class="flex items-center space-x-3 mb-2">
-                <span class="inline-flex p-2 rounded-xl bg-sky-50 text-brand-sky" id="pump-detail-icon">
-                  <i data-lucide="activity" class="h-6 w-6"></i>
-                </span>
-                <span class="text-xs text-brand-sky font-bold uppercase tracking-wider" id="pump-detail-category">지상용 가압식</span>
           <!-- Pump 3 -->
           <div class="bg-white rounded-3xl border border-slate-200/60 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
             <div>
@@ -777,8 +703,6 @@
                 <span class="p-2 bg-sky-50 rounded-xl"><i data-lucide="scissors" class="h-6 w-6"></i></span>
                 <span class="text-xs font-bold uppercase tracking-wider">오수/배수 슬러지 펌프</span>
               </div>
-              <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-slate-900" id="pump-detail-title">부스터 펌프 시스템 (개별 인버터 제어)</h3>
-              <p class="text-slate-500 text-sm mt-2 font-light" id="pump-detail-desc">상수도 및 빌딩 급수 인프라의 안정성을 극대화하기 위해 다단 펌프에 각각의 독립 인버터 유닛을 장착한 최신 가압 공급 시스템입니다.</p>
               <h3 class="font-heading font-extrabold text-lg sm:text-xl text-slate-900 mb-2">오수/배수 슬러지 펌프 (찌꺼기 분쇄형)</h3>
               <p class="text-slate-500 text-xs leading-relaxed font-light">
                 하수종말처리장, 정화조 및 축산 분뇨 이송 공정에 사용됩니다. 흡입구에 고강도 커터 칼날 휠과 전단판 구조를 탑재하여 흘러드는 끈 질긴 섬유질이나 비닐 등의 찌꺼기를 미세하게 절단 분쇄하여 관로 폐색(막힘) 현상 없이 슬러지를 이송합니다.
@@ -788,11 +712,6 @@
               <span class="text-[10px] text-brand-sky font-semibold bg-sky-50 px-2 py-0.5 rounded-full">주요범위: 토목 기초 배수 및 슬러지 강제 이송</span>
             </div>
           </div>
-            <!-- Pump Detail Subtabs -->
-            <div class="flex space-x-1 border-b border-slate-100 pb-4 mb-6">
-              <button onclick="switchPumpSubtab('theory')" id="psub-theory" class="px-4 py-2 text-xs sm:text-sm font-bold border-b-2 border-brand-sky text-brand-navy">작동 원리 및 특징</button>
-              <button onclick="switchPumpSubtab('check')" id="psub-check" class="px-4 py-2 text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-800">유지관리 점검지침</button>
-              <button onclick="switchPumpSubtab('trouble')" id="psub-trouble" class="px-4 py-2 text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-800">고장 진단 및 대책</button>
           <!-- Pump 4 -->
           <div class="bg-white rounded-3xl border border-slate-200/60 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
             <div>
@@ -809,17 +728,6 @@
               <span class="text-[10px] text-brand-sky font-semibold bg-sky-50 px-2 py-0.5 rounded-full">주요범위: 슬러지 케이크 및 초고점도 유체 압송</span>
             </div>
           </div>
-            <!-- Pump Detail Subtab Panels -->
-            <div class="space-y-6 text-sm text-slate-600 leading-relaxed">
-              
-              <!-- Subtab 1: Theory & Spec -->
-              <div id="pump-subtab-theory" class="block space-y-4">
-                <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-start space-x-3">
-                  <i data-lucide="info" class="h-5 w-5 text-brand-sky flex-shrink-0 mt-0.5"></i>
-                  <div>
-                    <span class="font-bold text-slate-900">핵심 기능:</span>
-                    <span id="pump-theory-text">배관 라인의 출구측 압력센서가 실시간 수압 변화를 전용 컨트롤러(SI3100)에 송신하면, 인버터(VFD)가 각각의 펌프 모터 주파수를 30Hz~60Hz 범위로 가변 제어하여 정압을 보장하고 불필요한 전력 소비를 원천 차단합니다.</span>
-                  </div>
           <!-- Pump 5 -->
           <div class="bg-white rounded-3xl border border-slate-200/60 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between sm:col-span-2 lg:col-span-1">
             <div>
@@ -922,13 +830,6 @@
                 <div class="h-10 w-10 rounded-xl bg-brand-sky/20 border border-brand-sky/40 flex items-center justify-center text-brand-light">
                   <i data-lucide="bot" class="h-6 w-6 animate-pulse"></i>
                 </div>
-                <div class="space-y-2">
-                  <h4 class="font-bold text-slate-900 text-base">주요 특징 및 유의점</h4>
-                  <ul class="list-disc pl-5 space-y-1 text-slate-500" id="pump-theory-bullets">
-                    <li>공장에서 배관 및 밸브, 가대, 제어반이 완벽히 하나의 유닛으로 가가동 조립되어 출고됩니다.</li>
-                    <li>시운전 전, 펌프 케이싱 내의 공기를 완벽히 제거하는 에어 벤팅(Air Venting) 작업이 선행되어야 합니다.</li>
-                    <li>모터가 반대로 회전할 경우 메카니컬 씰 파손 및 펌프 소손 위험이 있으므로 전원 투입 후 방향을 필히 확인합니다.</li>
-                  </ul>
                 <div>
                   <h4 class="font-heading font-extrabold text-sm sm:text-base leading-none">비에이텍 AI 유지관리 비서</h4>
                   <span class="text-[10px] text-brand-light font-medium mt-1 inline-block">Powered by NotebookLM Knowledge Base</span>
@@ -938,45 +839,6 @@
                 <i data-lucide="refresh-cw" class="h-4 w-4"></i>
               </button>
             </div>
-              <!-- Subtab 2: Checklists -->
-              <div id="pump-subtab-check" class="hidden space-y-4">
-                <div class="overflow-x-auto rounded-2xl border border-slate-100">
-                  <table class="w-full text-left text-xs divide-y divide-slate-100">
-                    <thead class="bg-slate-50 font-bold text-slate-800">
-                      <tr>
-                        <th class="px-4 py-3">점검 주기</th>
-                        <th class="px-4 py-3">점검 대상</th>
-                        <th class="px-4 py-3">세부 확인 사항</th>
-                        <th class="px-4 py-3">정상 기준 및 요령</th>
-                      </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-100 text-slate-500" id="pump-check-tbody">
-                      <tr>
-                        <td class="px-4 py-3 font-semibold text-slate-900">기동 전</td>
-                        <td class="px-4 py-3">케이싱 및 물탱크</td>
-                        <td class="px-4 py-3">흡입 저수조 충수 및 밸브 개방, 에어 배출</td>
-                        <td class="px-4 py-3">물탱크 만수 상태 확인, 에어 벤팅 완료</td>
-                      </tr>
-                      <tr>
-                        <td class="px-4 py-3 font-semibold text-slate-900">일일 점검</td>
-                        <td class="px-4 py-3">연결부 누수</td>
-                        <td class="px-4 py-3">메카니컬 씰(Mechanical Seal) 및 플랜지부 체결 누수</td>
-                        <td class="px-4 py-3">미세 누수 여부 점검 (씰 부위 오일/물 비침 무)</td>
-                      </tr>
-                      <tr>
-                        <td class="px-4 py-3 font-semibold text-slate-900">주간 점검</td>
-                        <td class="px-4 py-3">진동 및 소음</td>
-                        <td class="px-4 py-3">펌프 커플링, 모터 냉각팬 베어링 구동 진동 상태</td>
-                        <td class="px-4 py-3">이음이 없을 것, 손을 대었을 때 강한 열 발생 무</td>
-                      </tr>
-                      <tr>
-                        <td class="px-4 py-3 font-semibold text-slate-900">매월 점검</td>
-                        <td class="px-4 py-3">전기 및 절연</td>
-                        <td class="px-4 py-3">모터 리드선 단자 조임 상태 및 절연저항 측정</td>
-                        <td class="px-4 py-3">절연저항이 10MΩ 이상 유지될 것 (이하 시 가동 중단)</td>
-                      </tr>
-                    </tbody>
-                  </table>
             <!-- Chat Message Bubbles Scroll Area -->
             <div id="chat-scroller" class="flex-grow p-4 sm:p-6 overflow-y-auto space-y-4 bg-slate-50 shadow-inner">
               
@@ -990,41 +852,6 @@
                   어떤 펌프 모델의 점검 방법이나 이상 작동 현상(소음, 누수, 과부하 트립 등)이 궁금하신가요? 아래 질문 추천 태그를 누르시거나 검색창에 입력해 주십시오.
                 </div>
               </div>
-              <!-- Subtab 3: Troubleshooting Table -->
-              <div id="pump-subtab-trouble" class="hidden space-y-4">
-                <div class="overflow-x-auto rounded-2xl border border-slate-100">
-                  <table class="w-full text-left text-xs divide-y divide-slate-100">
-                    <thead class="bg-slate-50 font-bold text-slate-800">
-                      <tr>
-                        <th class="px-4 py-3">발생 이상 현상</th>
-                        <th class="px-4 py-3">예상 고장 원인</th>
-                        <th class="px-4 py-3">진단 및 조치 방법</th>
-                      </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-100 text-slate-500" id="pump-trouble-tbody">
-                      <tr>
-                        <td class="px-4 py-3 font-bold text-red-600">제어반 전원 표시등 먹통</td>
-                        <td class="px-4 py-3">메인 누전차단기(MCCB) 차단 또는 제어반 휴즈 단선</td>
-                        <td class="px-4 py-3">배선 점검 후 차단기 리셋, 휴즈 단선 확인 후 즉시 교체</td>
-                      </tr>
-                      <tr>
-                        <td class="px-4 py-3 font-bold text-slate-800">전원은 켜지나 모터 미가동</td>
-                        <td class="px-4 py-3">흡입 저수조 수위 저하(레벨 스위치 작동) 또는 OCR 차단</td>
-                        <td class="px-4 py-3">물 공급 상태 확인하여 충수 유도, 과전류 계전기 리셋</td>
-                      </tr>
-                      <tr>
-                        <td class="px-4 py-3 font-bold text-slate-800">모터는 가동하나 토출 무</td>
-                        <td class="px-4 py-3">펌프 내 에어 고임 또는 흡입라인 이물질 폐색, 역회전</td>
-                        <td class="px-4 py-3">에어 밸브로 배출(Air Venting), 배선 상 확인 후 회전 정상화</td>
-                      </tr>
-                      <tr>
-                        <td class="px-4 py-3 font-bold text-slate-800">심한 진동 및 노이즈 발생</td>
-                        <td class="px-4 py-3">가대 앵커볼트 풀림, 베어링 마모, 씰 크랙</td>
-                        <td class="px-4 py-3">볼트 고정력 보강, A/S 접수를 통해 베어링/씰 교체</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
             </div>
             <!-- Chat Typing animation helper -->
             <div id="chat-typing" class="px-6 py-2 bg-slate-50 hidden">
@@ -1560,7 +1387,6 @@
                   <option value="submersible">심정용 수중 펌프</option>
                   <option value="sludge">오수/배수 슬러지 펌프</option>
                   <option value="mono">일축나사식 모노 펌프</option>
-                  <option value="metering">다이아프램 정량 펌프</option>
                   <option value="volute">편흡입 볼류트 펌프</option>
                   <option value="etc">기타 가압 펌프 제품/부품</option>
                 </select>
@@ -1658,7 +1484,6 @@
           * 수중 펌프 : 이중 실링 기술을 통해 모터 내 누수를 원천 방어.<br>
           * 슬러지 펌프 : 강력한 고형물 분쇄 이송 기능 탑재.<br>
           * 모노 펌프 : 편심 추진 공동 방식으로 고점도 연속 이송 실현.<br>
-          * 정량 펌프 : 특허 등속도캠 설계로 맥동을 차단하여 화학 약품 정량 주입.
           * 볼류트 펌프 : 원심 원리 나선 케이싱 유로로 다목적 대용량 가압 송수.
         </p>
       </div>
@@ -1731,7 +1556,6 @@
       }
       // Update Desktop Navbar style
       const navButtons = document.querySelectorAll('header nav button');
-      navButtons.forEach(btn => btn.className = 'px-4 py-2 rounded-lg text-sm font-semibold hover:text-brand-light hover:bg-white/5 transition-all duration-200');
       navButtons.forEach(btn => {
         if (btn.id === 'nav-chatbot') {
           btn.className = 'px-3 py-2 rounded-lg text-sm font-bold text-brand-light hover:text-white hover:bg-white/5 transition-all duration-200 flex items-center space-x-1';
@@ -1746,7 +1570,6 @@
       }
       // Update Mobile Navbar style
       const mobButtons = document.querySelectorAll('#mobile-menu-overlay nav button');
-      mobButtons.forEach(btn => btn.className = 'flex items-center space-x-3 px-4 py-3 rounded-lg text-left font-semibold hover:bg-white/5 transition-all text-slate-100');
       mobButtons.forEach(btn => {
         if (btn.id === 'mob-nav-chatbot') {
           btn.className = 'flex items-center space-x-3 px-4 py-3 rounded-lg text-left font-bold text-brand-light hover:bg-white/5 transition-all text-slate-100';
@@ -1931,13 +1754,9 @@
     }
     // ---------------- Print & Download Simulation ----------------
     function triggerPrintBrochure() {
-      // Directly trigger printer setup using CSS print rules
       window.print();
     }
     function simulatePdfDownload() {
-      // Simulate file export action
-      const successModal = document.getElementById('inquiry-success-dialog');
-      // Create a temporary dialog to show downlaod started
       const tempDialog = document.createElement('dialog');
       tempDialog.className = "backdrop:bg-black/60 rounded-3xl border border-slate-200 p-8 max-w-sm w-full text-center space-y-5 shadow-2xl focus:outline-none";
       tempDialog.innerHTML = `
@@ -1961,198 +1780,6 @@
         tempDialog.remove();
       };
     }
-    // ---------------- Pump Details Tab Switcher ----------------
-    let activePumpIndex = 0;
-    let activePumpSubtabId = 'theory';
-    const pumpsData = [
-      {
-        title: "부스터 펌프 시스템 (인버터 가압 제어)",
-        category: "지상용 가압식",
-        icon: "activity",
-        desc: "상수도 및 빌딩 급수 인프라의 안정성을 극대화하기 위해 다단 펌프에 각각의 독립 인버터 유닛을 장착한 최신 가압 공급 시스템입니다.",
-        theory: "배관 라인의 출구측 압력센서가 실시간 수압 변화를 전용 컨트롤러(SI3100)에 송신하면, 인버터(VFD)가 각각의 펌프 모터 주파수를 30Hz~60Hz 범위로 가변 제어하여 정압을 보장하고 불필요한 전력 소비를 원천 차단합니다.",
-        bullets: [
-          "공장에서 배관 및 밸브, 가대, 제어반이 완벽히 하나의 유닛으로 조립되어 시험 후 출고됩니다.",
-          "시운전 전, 펌프 케이싱 내의 공기를 완벽히 제거하는 에어 벤팅(Air Venting) 작업이 선행되어야 합니다.",
-          "모터가 반대로 회전할 경우 메카니컬 씰 파손 및 펌프 소손 위험이 있으므로 전원 투입 후 방향을 필히 확인합니다."
-        ],
-        checklist: [
-          { period: "기동 전", target: "물탱크 수위", detail: "흡입 저수조 수위 만수 여부 및 흡입 밸브 개방", normal: "저수조 물 보충 및 밸브 FULL OPEN" },
-          { period: "기동 전", target: "공기 빼기", detail: "펌프 Casing 상단 에어 벤팅 플러그 개방", normal: "기포가 완전히 빠지고 물이 흘러나올 때까지 대기" },
-          { period: "일일 점검", target: "씰 누설", detail: "Mechanical Seal 부위의 미세 누수 및 습기 확인", normal: "방울로 떨어지는 누수가 없을 것" },
-          { period: "주간 점검", target: "소음/진동", detail: "모터 구동 이음 및 고정 베어링 소음 실측", normal: "이상 고주파 노이즈 또는 흔들림 무" }
-        ],
-        trouble: [
-          { symptom: "제어반 전원 램프 미점등", cause: "패널 내부 배선 단선 또는 주 배선용 차단기(MCCB) 내려감", action: "N.F.B 차단기 및 휴즈(Fuse) 상태 점검 후 ON" },
-          { symptom: "모터 과열 및 기동 불가", cause: "펌프 축 마모/이물질 고착에 의한 모터 부하, 혹은 OCR 오동작", action: "축을 수동 회전시켜 부드러움 점검, 정격전류 리셋" },
-          { symptom: "펌프 가동 빈도가 지나치게 높음", cause: "토출 배관 파손 누수, 또는 압력탱크 질소 가스 압력 부족", action: "배관 리크 부위 차단 보수, 질소가스 압력 재보충" }
-        ]
-      },
-      {
-        title: "심정용 수중 펌프 (이중 실링 방수)",
-        category: "수중 침수식",
-        icon: "arrow-down-to-line",
-        desc: "심정용 우물 또는 침수조 하부에서 완전 침수 상태로 가동하며, 고압의 누수를 원천 차단하는 이중 메카니컬 씰 기술이 적용된 펌프입니다.",
-        theory: "모터 하부 격실에 특수 오일챔버를 설계하고, 상하부에 이중 기밀 Mechanical Seal을 장착하여 지중 지하수 압력이 코일 내부로 유입되는 것을 방지합니다. 펌프 구동 케이블의 특수 수지 피복 마감이 기밀의 핵심입니다.",
-        bullets: [
-          "지하수에 모래가 다량 함유된 경우 임펠러 급속 마모의 원인이 되므로 스트레이너망 상태를 필히 유지하십시오.",
-          "설치 후 장기 가동 중단 시에도 최소 1개월에 1회는 작동시켜 모터 고착을 예방합니다.",
-          "가동 전, 모터 코일과 케이블 간의 절연저항(Megger)을 실측하여 10MΩ 이상임을 검증하십시오."
-        ],
-        checklist: [
-          { period: "기동 전", target: "절연 저항", detail: "케이블 및 모터 권선의 대지간 절연저항 실측", normal: "10MΩ 이상 양호 (이하 시 가동 불가)" },
-          { period: "기동 전", target: "케이블 손상", detail: "케이블 피복 찍힘, 갈라짐 등 크랙부 점검", normal: "피복 상처가 없을 것 (침수 시 누전 위험)" },
-          { period: "주간 점검", target: "토출 유량", detail: "배수관 출구 유량 실측 및 맥동 여부 점검", normal: "양정에 따른 안정적 토출 유지" },
-          { period: "매월 점검", target: "전류 확인", detail: "정격 부하 가동 시 3상 전류 평형 유지 여부", normal: "각 상간 전류 편차 10% 이내" }
-        ],
-        trouble: [
-          { symptom: "절연 저항 수치 극도로 저하", cause: "모터 케이블 말단부 침수 또는 모터 격실 씰 파손으로 물 침투", action: "즉시 전원 차단, 펌프 인양 후 씰 교체 및 모터 권선 재건조" },
-          { symptom: "토출량 현저히 급감", cause: "흡입 스트레이너망에 이물질 부착 폐색, 또는 임펠러 모래 마모", action: "펌프 인양 후 스트레이너 청소, 임펠러 간극 조절 및 교체" }
-        ]
-      },
-      {
-        title: "오수/배수 슬러지 펌프 (찌꺼기 분쇄형)",
-        category: "오물 배수용",
-        icon: "scissors",
-        desc: "하수 처리 및 축산 분뇨, 진흙 슬러지 이송 시 큰 찌꺼기나 섬유질을 강력히 분쇄하여 배관 막힘 없이 강제 송수하는 특수 산업용 펌프입니다.",
-        theory: "펌프 흡입구 측에 고강도 커터 칼날(Cutter Mechanism)과 전단판을 설계하여, 흘러들어온 긴 섬유질, 비닐 등을 조밀한 입자로 분쇄한 뒤 임펠러 날개를 통해 토출 배관으로 가압 배출합니다.",
-        bullets: [
-          "단단한 쇠붙이나 콘크리트 덩어리가 유입될 경우 커터 칼날 및 임펠러 크랙이 발생할 수 있습니다.",
-          "구동 시 슬러지의 높은 점성으로 인해 기동 부하 전류가 높게 형성되므로 모터 열 축적에 주의하십시오.",
-          "작동 전 Casing 플러그를 열어 내부 가스 고임을 배출하여 진공 에어포켓 형성을 방지합니다."
-        ],
-        checklist: [
-          { period: "기동 전", target: "커터 칼날", detail: "흡입 칼날 부착 부위의 마모 및 체결 상태 수동 확인", normal: "칼날 이 무뎌짐이 없고 유격이 없을 것" },
-          { period: "일일 점검", target: "기동 부하", detail: "슬러지 펌프 가동 전류 실측 및 이상 음향 확인", normal: "정격 전류 범위 내 유지, 걸걸거리는 마찰음 무" },
-          { period: "주간 점검", target: "오일 챔버", detail: "윤활 격실 오일의 탁도 및 변색 점검", normal: "우유빛 유화 현상 없을 것 (유화 시 수분 침투 신호)" }
-        ],
-        trouble: [
-          { symptom: "분쇄 이송력 급감 및 막힘", cause: "커터 칼날 이 빠짐 또는 전단판과의 간극 과다 벌어짐", action: "칼날 연마 또는 교체, 전단 임펠러 간극 0.3mm 이내 조정" },
-          { symptom: "과전류 계전기(OCR) 잦은 차단", cause: "슬러지 농도 점성이 과도하게 높음, 또는 모터 코일 층간 단락", action: "용수를 투입해 농도 희석, 모터 코일 저항 실측 후 재권선" }
-        ]
-      },
-      {
-        title: "일축나사식 모노 펌프 (PC 모노 펌프)",
-        category: "고점도 이송용",
-        icon: "infinity",
-        desc: "금속재 로터(Rotor)와 탄성체 스테이터(Stator)의 편심 구동을 통해 생성되는 고립된 공간을 나선형으로 추진시켜, 고점도 고형 물질을 맥동 없이 일정 유량 송수하는 특수 펌프입니다.",
-        theory: "피치 차이가 있는 스테이터 내부에서 편심 회전하는 로터가 나선 회전을 수행하면, 흡입구에서 토출구로 흐르는 밀폐된 공동(Cavity)들이 연속적으로 이동하며 점도가 높은 고농도 액을 일정한 유량으로 밀어냅니다.",
-        bullets: [
-          "★ 주의: 공회전(Dry Running) 시 스테이터 고무와 로터 간의 마찰열로 수분 내 스테이터가 완벽히 소손되므로 기동 전 반드시 액을 채워야 합니다.",
-          "배관 토출 밸브가 닫힌 상태에서 기동 시 배관 압력이 한계 이상으로 과부하되어 라인이 파열될 수 있습니다.",
-          "그랜드 패킹(Grand Packing) 체결 타입의 경우 미세한 액 누설이 패킹 윤활을 도우므로 과도하게 조이지 않습니다."
-        ],
-        checklist: [
-          { period: "기동 전", target: "유체 주입", detail: "펌프 하우징 내부에 유체 사전 주입 여부 확인", normal: "공회전 예방용 액이 가득 차 있을 것" },
-          { period: "일일 점검", target: "패킹 상태", detail: "그랜드 패킹 접합부 누설 빈도 관찰", normal: "분당 10~20방울의 미세 누설 유지 (패킹 윤활용)" },
-          { period: "주간 점검", target: "토출 압력", detail: "토출부 게이지 압력의 정상 범위 연동 상태", normal: "맥동 없이 압력 바늘이 일정 수치로 정지" }
-        ],
-        trouble: [
-          { symptom: "모터 구동 전류 과부하", cause: "이송 액체의 온도 하강으로 점성 한계 초과, 또는 토출 밸브 닫힘", action: "토출 라인 밸브 개방 점검, 유체 보온 처리를 통한 점도 제어" },
-          { symptom: "압력이 오르지 않고 유량 급감", cause: "고무 스테이터(Stator) 마모 또는 로터(Rotor) 크랙/도금 탈락", action: "스테이터 및 로터 팩킹 분해 후 마모 규격 검측 및 신품 교체" }
-        ]
-      },
-      {
-        title: "다이아프램 정량 펌프 (약품 투입용)",
-        category: "정밀 투입용",
-        icon: "pipette",
-        desc: "등속도캠 구동 메커니즘을 적용하여 약품 투입 시 맥동 현상을 배제하고 설정된 극미량의 케미컬 약품을 정확한 속도로 투입하는 계량 펌프입니다.",
-        theory: "회전 모터의 운동을 특수 캠 구조를 통해 다이아프램의 왕복 운동으로 전환하고, 흡토출 피스톤 체크밸브 볼의 자중 및 용수압을 이용해 일방향의 정량 흐름을 정밀하게 제어하여 주입합니다.",
-        bullets: [
-          "체크밸브 볼에 찌꺼기나 결정체가 끼면 기밀이 파괴되어 역류 현상 및 정량 주입 실패가 발생합니다.",
-          "다이아프램(PTFE/EPDM 재질)은 소모품이므로 균열 발생 전 주기적으로 수명을 체크해 교체하십시오.",
-          "약품이 누출될 경우 모터 내부로 침식되어 단선 사고가 발생할 수 있으므로 씰 피팅을 보강합니다."
-        ],
-        checklist: [
-          { period: "기동 전", target: "스트로크", detail: "다이얼 레버 조절 눈금의 설정 범위 고정 확인", normal: "설정 투입 백분율(%) 지점 락 볼트 체결 완료" },
-          { period: "일일 점검", target: "약품 리크", detail: "다이아프램 헤드 접합부 균열 및 화학약품 비침 여부", normal: "약품 리크 현상 및 냄새가 전혀 없을 것" },
-          { period: "주간 점검", target: "체크 밸브", detail: "흡/토출 체크밸브 내의 이물질 걸림 확인", normal: "볼 밸브 시트 밀착이 잘 되며 역류 현상 무" }
-        ],
-        trouble: [
-          { symptom: "약품은 공급되나 투입량 불규칙", cause: "흡입 체크밸브 내 결정체 부착 기밀 누설 또는 기포 고임", action: "체크밸브 분해 후 구체 세척, 스트로크 가스 벤트 에어빼기" },
-          { symptom: "약품 접촉부 씰 누액", cause: "다이아프램 파손 크랙 또는 체결 볼트 토크 풀림", action: "신규 테플론 다이아프램 교체 및 헤드 볼트 대각 순서 균일 조임" }
-        ]
-      }
-    ];
-    function switchPump(pumpIndex) {
-      activePumpIndex = pumpIndex;
-      const data = pumpsData[pumpIndex];
-      // Update sidebar buttons style
-      for (let i = 0; i < 5; i++) {
-        const btn = document.getElementById(`pump-btn-${i}`);
-        if (btn) {
-          if (i === pumpIndex) {
-            btn.className = "w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all flex items-center space-x-2 text-brand-sky bg-white shadow-sm border border-slate-200/50";
-            btn.querySelector('i').setAttribute('data-lucide', 'chevrons-right');
-            btn.querySelector('i').classList.remove('opacity-55');
-          } else {
-            btn.className = "w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all flex items-center space-x-2 text-slate-600 hover:bg-white/50";
-            btn.querySelector('i').setAttribute('data-lucide', 'chevron-right');
-            btn.querySelector('i').classList.add('opacity-55');
-          }
-        }
-      }
-      // Update main text
-      document.getElementById('pump-detail-title').textContent = data.title;
-      document.getElementById('pump-detail-category').textContent = data.category;
-      document.getElementById('pump-detail-desc').textContent = data.desc;
-      document.getElementById('pump-theory-text').textContent = data.theory;
-      // Update detail bullets
-      const bulletsList = document.getElementById('pump-theory-bullets');
-      bulletsList.innerHTML = '';
-      data.bullets.forEach(txt => {
-        const li = document.createElement('li');
-        li.textContent = txt;
-        bulletsList.appendChild(li);
-      });
-      // Update check table
-      const checkTbody = document.getElementById('pump-check-tbody');
-      checkTbody.innerHTML = '';
-      data.checklist.forEach(item => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td class="px-4 py-3 font-semibold text-slate-900">${item.period}</td>
-          <td class="px-4 py-3">${item.target}</td>
-          <td class="px-4 py-3">${item.detail}</td>
-          <td class="px-4 py-3">${item.normal}</td>
-        `;
-        checkTbody.appendChild(tr);
-      });
-      // Update trouble table
-      const troubleTbody = document.getElementById('pump-trouble-tbody');
-      troubleTbody.innerHTML = '';
-      data.trouble.forEach(item => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td class="px-4 py-3 font-bold text-red-600">${item.symptom}</td>
-          <td class="px-4 py-3">${item.cause}</td>
-          <td class="px-4 py-3">${item.action}</td>
-        `;
-        troubleTbody.appendChild(tr);
-      });
-      // Update dynamic icon
-      const iconContainer = document.getElementById('pump-detail-icon');
-      iconContainer.innerHTML = `<i data-lucide="${data.icon}" class="h-6 w-6"></i>`;
-      // Refresh icons
-      lucide.createIcons();
-    }
-    function switchPumpSubtab(subtabId) {
-      activePumpSubtabId = subtabId;
-      const ids = ['theory', 'check', 'trouble'];
-      
-      ids.forEach(id => {
-        const btn = document.getElementById(`psub-${id}`);
-        const panel = document.getElementById(`pump-subtab-${id}`);
-        
-        if (id === subtabId) {
-          btn.className = "px-4 py-2 text-xs sm:text-sm font-bold border-b-2 border-brand-sky text-brand-navy";
-          panel.classList.remove('hidden');
-        } else {
-          btn.className = "px-4 py-2 text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-800";
-          panel.classList.add('hidden');
-        }
-      });
-    }
     // ---------------- Certifications Lightbox ----------------
     function openCertLightbox(imgSrc, title) {
       const box = document.getElementById('cert-lightbox');
@@ -2163,7 +1790,6 @@
         img.src = imgSrc;
         box.classList.remove('hidden');
         box.classList.add('flex');
-        document.body.style.overflow = 'hidden'; // Lock background scrolling
         document.body.style.overflow = 'hidden';
       }
     }
@@ -2172,7 +1798,6 @@
       if (box) {
         box.classList.add('hidden');
         box.classList.remove('flex');
-        document.body.style.overflow = ''; // Restore scrolling
         document.body.style.overflow = '';
       }
     }
@@ -2180,17 +1805,13 @@
     function submitInquiry(event) {
       event.preventDefault();
       
-      // Perform validation check
-      const name = document.getElementById('iq-name').value.strip ? document.getElementById('iq-name').value.strip() : document.getElementById('iq-name').value;
       const name = document.getElementById('iq-name').value.trim ? document.getElementById('iq-name').value.trim() : document.getElementById('iq-name').value;
       const phone = document.getElementById('iq-phone').value;
       const content = document.getElementById('iq-content').value;
       const privacy = document.getElementById('iq-privacy').checked;
       if (!name || !phone || !content || !privacy) {
-        // Safe fallback in case browser bypasses required tag
         return;
       }
-      // Show Custom Success Modal Dialog
       const dialog = document.getElementById('inquiry-success-dialog');
       if (dialog) {
         dialog.showModal();
@@ -2202,7 +1823,6 @@
       if (dialog) {
         dialog.close();
         document.body.style.overflow = '';
-        // Reset form
         document.getElementById('inquiry-form').reset();
       }
     }
@@ -2371,3 +1991,4 @@
   </script>
 </body>
 </html>
+
